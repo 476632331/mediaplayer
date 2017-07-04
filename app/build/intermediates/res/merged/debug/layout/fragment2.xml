@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:background="#77ede9ed"
+        android:gravity="center"
+        android:text="宝宝听"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"></TextView>
+    <RadioGroup
+        android:id="@+id/mGroup"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/bn1"
+            android:checked="true"
+            android:textSize="20sp"
+            android:text="儿歌"
+            android:button="@null"
+            android:background="@drawable/btn_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/bn2"
+            android:textSize="20sp"
+            android:text="故事"
+            android:button="@null"
+            android:background="@drawable/btn_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:background="#fc9ccf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+</LinearLayout>

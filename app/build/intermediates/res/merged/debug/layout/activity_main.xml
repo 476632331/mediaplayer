@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.unittwo.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_above="@+id/mGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/mGroup"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rbn1"
+            android:checked="true"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:drawableTop="@drawable/vedio_selector"
+            android:button="@null"
+            android:text="宝宝看"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbn2"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:drawableTop="@drawable/music_selector"
+            android:button="@null"
+            android:text="宝宝听"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbn3"
+            android:textColor="@color/text_color"
+            android:gravity="center"
+            android:drawableTop="@drawable/me_selector"
+            android:button="@null"
+            android:text="我的"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</RelativeLayout>

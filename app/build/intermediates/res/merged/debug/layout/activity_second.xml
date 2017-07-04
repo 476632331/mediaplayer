@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.unittwo.SecondActivity">
+    <LinearLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:onClick="back"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="虫儿飞"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:background="#787878"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.example.administrator.unittwo.view.MyView
+            android:id="@+id/songs"
+            app:normalTextSize="15sp"
+            app:currentTextSize="20sp"
+            app:bgColor="@color/White"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:textColor="#fff"
+            android:id="@+id/text1"
+            android:text="播放时间"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_toRightOf="@+id/text1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="90dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#fff"
+            android:id="@+id/text2"
+            android:text="播放全长"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_toRightOf="@+id/seekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:id="@+id/image"
+                android:onClick="pause"
+                android:layout_centerInParent="true"
+                android:src="@drawable/pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
